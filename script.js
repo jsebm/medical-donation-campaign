@@ -1,7 +1,7 @@
 const CAMPAIGN_CONFIG = {
   goal: 5000,
-  raised: 2875,
-  donationCount: 46,
+  raised: 0,
+  donationCount: 0,
   urgentDeadline: "2026-06-15T23:59:59",
   paypalUrl: "https://www.paypal.com/donate/?hosted_button_id=REEMPLAZAR_ID"
 };
@@ -59,8 +59,7 @@ function getStoredMessages() {
   const raw = localStorage.getItem(STORAGE_KEY_MESSAGES);
   if (!raw) {
     return [
-      { name: "Laura", message: "No estan solos. Mucha fuerza en esta etapa." },
-      { name: "Carlos", message: "Comparti la campana con mi equipo. Vamos por esa meta." }
+      { name: "Laura", message: "No estan solos. Mucha fuerza en esta etapa." }
     ];
   }
 

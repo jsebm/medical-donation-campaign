@@ -17,6 +17,14 @@
   <link rel="preload" href="../style.css" as="style">
   <link rel="stylesheet" href="../style.css">
   <script defer src="../script.js"></script>
+  <script>
+    (function () {
+      var language = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      if (!language.startsWith("en")) {
+        window.location.replace("/medical-donation-campaign/");
+      }
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to main content</a>
@@ -46,7 +54,7 @@
           <p class="lead">We are raising funds for high-priority medication, medical tests, and specialist follow-up. Every contribution helps reduce delays and gives this family a real chance for recovery.</p>
           <div class="hero-cta-row">
             <a id="paypalDonateBtn" class="btn btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=REEMPLAZAR_ID" target="_blank" rel="noopener noreferrer">Donate with PayPal</a>
-            <a class="btn btn-secondary" href="#updates">See updates</a>
+            <a class="btn btn-secondary" href="#story">Read the story</a>
           </div>
         </article>
 
@@ -83,13 +91,9 @@
     </section>
 
     <section id="updates" class="section alt">
-      <div class="container">
-        <h2 class="reveal">Latest updates</h2>
-        <div class="card-grid updates-grid">
-          <article class="card reveal"><h3>May 08, 2026</h3><p>Next treatment stage confirmed for next week.</p></article>
-          <article class="card reveal"><h3>May 02, 2026</h3><p>Additional tests completed and medication adjusted.</p></article>
-          <article class="card reveal"><h3>Apr 25, 2026</h3><p>Campaign launched to reduce treatment delays.</p></article>
-        </div>
+      <div class="container reveal">
+        <h2>Updates</h2>
+        <p>There are no updates published yet.</p>
       </div>
     </section>
 

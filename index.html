@@ -33,6 +33,16 @@
   <link rel="alternate" hreflang="en" href="https://jsebm.github.io/medical-donation-campaign/en/">
   <link rel="alternate" hreflang="x-default" href="https://jsebm.github.io/medical-donation-campaign/">
 
+  <script>
+    (function () {
+      var language = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var path = window.location.pathname;
+      if (language.startsWith("en") && !path.includes("/en/")) {
+        window.location.replace("/medical-donation-campaign/en/");
+      }
+    })();
+  </script>
+
   <!-- Google Search Console: pega aqui la etiqueta de verificacion -->
   <!-- <meta name="google-site-verification" content="TU-CODIGO"> -->
 
@@ -106,7 +116,7 @@
             <a id="paypalDonateBtn" class="btn btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=REEMPLAZAR_ID" target="_blank" rel="noopener noreferrer">Donate with PayPal</a>
             <a class="btn btn-secondary" href="#transparencia">Ver transparencia</a>
           </div>
-          <p class="trust-note">Plataforma segura, actualizaciones frecuentes y uso transparente de los fondos.</p>
+          <p class="trust-note">Plataforma segura y uso transparente de los fondos.</p>
         </article>
 
         <aside class="donation-card reveal" aria-labelledby="metaTitle">
@@ -131,7 +141,7 @@
               <span class="stat-label">Dias urgentes</span>
             </div>
           </div>
-          <p class="small">Meta fija: 5000 USD. Datos de ejemplo editables en script.js.</p>
+          <p class="small">Recaudo actual: $0 USD. Meta fija: 5000 USD.</p>
         </aside>
       </div>
     </section>
@@ -175,22 +185,9 @@
     </section>
 
     <section id="actualizaciones" class="section">
-      <div class="container">
-        <h2 class="reveal">Actualizaciones recientes</h2>
-        <div class="card-grid updates-grid">
-          <article class="card reveal">
-            <h3>08 Mayo 2026</h3>
-            <p>Se confirmo el inicio del nuevo bloque de tratamiento para la proxima semana. Gracias por cada aporte recibido.</p>
-          </article>
-          <article class="card reveal">
-            <h3>02 Mayo 2026</h3>
-            <p>Se completaron estudios complementarios y se ajusto medicacion para mejorar tolerancia y respuesta.</p>
-          </article>
-          <article class="card reveal">
-            <h3>25 Abril 2026</h3>
-            <p>Publicamos esta campana para acelerar tiempos medicos. Ya contamos con apoyo local y necesitamos ampliar alcance.</p>
-          </article>
-        </div>
+      <div class="container reveal">
+        <h2>Actualizaciones</h2>
+        <p>Por ahora no hay actualizaciones publicadas.</p>
       </div>
     </section>
 
@@ -219,7 +216,7 @@
       <div class="container split-layout">
         <article class="content reveal">
           <h2>Mensajes de apoyo</h2>
-          <p>Deja un mensaje para acompanar emocionalmente este proceso. Se guarda localmente en tu navegador.</p>
+          <p>Deja un mensaje para acompanar emocionalmente este proceso.</p>
           <form id="supportForm" class="support-form" novalidate>
             <label for="supportName">Nombre</label>
             <input id="supportName" name="name" type="text" maxlength="50" required>
