@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jsebm.github.io/medical-donation-campaign/sitemap.xml

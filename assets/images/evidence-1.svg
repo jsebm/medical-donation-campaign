@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Resumen medico">
+  <rect width="640" height="420" fill="#eef7f3"/>
+  <rect x="90" y="50" width="460" height="320" rx="16" fill="#fff" stroke="#b8d6c9"/>
+  <rect x="120" y="96" width="300" height="18" rx="9" fill="#146356"/>
+  <rect x="120" y="140" width="390" height="12" rx="6" fill="#b6ccc5"/>
+  <rect x="120" y="166" width="350" height="12" rx="6" fill="#b6ccc5"/>
+  <rect x="120" y="192" width="370" height="12" rx="6" fill="#b6ccc5"/>
+  <rect x="120" y="230" width="170" height="70" rx="10" fill="#d9eee7"/>
+  <rect x="305" y="230" width="205" height="70" rx="10" fill="#f7e5d2"/>
+  <text x="120" y="336" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="20" fill="#305458">Documento de evidencia (ejemplo)</text>
+</svg>

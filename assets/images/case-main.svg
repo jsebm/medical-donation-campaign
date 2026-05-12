@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Imagen principal del caso medico">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7f5ef"/>
+      <stop offset="100%" stop-color="#dbeef8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="250" cy="220" r="120" fill="#c3e6d6"/>
+  <rect x="140" y="320" width="220" height="180" rx="26" fill="#fff"/>
+  <circle cx="650" cy="240" r="95" fill="#b9ddf4"/>
+  <rect x="560" y="330" width="180" height="140" rx="18" fill="#fff"/>
+  <text x="60" y="90" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="46" fill="#1d3844" font-weight="700">Tratamiento Medico Urgente</text>
+  <text x="60" y="142" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="27" fill="#315563">Tu donacion acelera atencion y recuperacion</text>
+  <rect x="60" y="470" width="780" height="70" rx="14" fill="#ffffff" opacity="0.92"/>
+  <text x="90" y="515" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="30" fill="#146356" font-weight="700">Meta solidaria: 5000 USD</text>
+</svg>
