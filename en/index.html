@@ -11,12 +11,20 @@
   <link rel="canonical" href="https://jsebm.github.io/medical-donation-campaign/en/">
   <link rel="alternate" hreflang="es" href="https://jsebm.github.io/medical-donation-campaign/">
   <link rel="alternate" hreflang="en" href="https://jsebm.github.io/medical-donation-campaign/en/">
-  <link rel="alternate" hreflang="x-default" href="https://jsebm.github.io/medical-donation-campaign/en/">
+  <link rel="alternate" hreflang="x-default" href="https://jsebm.github.io/medical-donation-campaign/">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="theme-color" content="#146356">
   <link rel="preload" href="../style.css" as="style">
   <link rel="stylesheet" href="../style.css">
   <script defer src="../script.js"></script>
+  <script>
+    (function () {
+      var language = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      if (!language.startsWith("en")) {
+        window.location.replace("/medical-donation-campaign/");
+      }
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to main content</a>
