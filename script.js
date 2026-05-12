@@ -17,26 +17,39 @@ function formatCurrency(value) {
 }
 
 function updateDonationUI() {
+  const raisedAmount = document.getElementById("raisedAmount");
+  const progressPercent = document.getElementById("progressPercent");
+  const remainingAmount = document.getElementById("remainingAmount");
+  const donationCount = document.getElementById("donationCount");
+  const progressBar = document.getElementById("progressBar");
+  const donateBtn = document.getElementById("paypalDonateBtn");
+
+  if (!raisedAmount || !progressPercent || !remainingAmount || !donationCount || !progressBar || !donateBtn) {
+    return;
+  }
+
   const raised = Math.min(CAMPAIGN_CONFIG.raised, CAMPAIGN_CONFIG.goal);
   const percent = Math.min((raised / CAMPAIGN_CONFIG.goal) * 100, 100);
   const remaining = Math.max(CAMPAIGN_CONFIG.goal - raised, 0);
 
-  document.getElementById("raisedAmount").textContent = formatCurrency(raised);
-  document.getElementById("progressPercent").textContent = `${Math.round(percent)}%`;
-  document.getElementById("remainingAmount").textContent = `${formatCurrency(remaining)} restantes`;
-  document.getElementById("donationCount").textContent = String(CAMPAIGN_CONFIG.donationCount);
+  raisedAmount.textContent = formatCurrency(raised);
+  progressPercent.textContent = `${Math.round(percent)}%`;
+  remainingAmount.textContent = `${formatCurrency(remaining)} restantes`;
+  donationCount.textContent = String(CAMPAIGN_CONFIG.donationCount);
 
-  const progressBar = document.getElementById("progressBar");
   requestAnimationFrame(() => {
     progressBar.style.width = `${percent}%`;
   });
 
-  const donateBtn = document.getElementById("paypalDonateBtn");
   donateBtn.href = CAMPAIGN_CONFIG.paypalUrl;
 }
 
 function updateUrgencyDays() {
   const daysLeftElement = document.getElementById("daysLeft");
+  if (!daysLeftElement) {
+    return;
+  }
+
   const deadline = new Date(CAMPAIGN_CONFIG.urgentDeadline).getTime();
 
   function tick() {
@@ -77,6 +90,10 @@ function persistMessages(messages) {
 
 function renderMessages() {
   const list = document.getElementById("messagesList");
+  if (!list) {
+    return;
+  }
+
   const messages = getStoredMessages();
   list.innerHTML = "";
 
@@ -95,6 +112,9 @@ function renderMessages() {
 function setupSupportForm() {
   const form = document.getElementById("supportForm");
   const feedback = document.getElementById("formFeedback");
+  if (!form || !feedback) {
+    return;
+  }
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -119,6 +139,10 @@ function setupSupportForm() {
 
 function setupThemeToggle() {
   const toggle = document.getElementById("themeToggle");
+  if (!toggle) {
+    return;
+  }
+
   const stored = localStorage.getItem("campaign_theme");
 
   if (stored === "dark") {
