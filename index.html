@@ -31,13 +31,12 @@
   <link rel="apple-touch-icon" href="assets/favicon.svg">
   <link rel="alternate" hreflang="es" href="https://jsebm.github.io/medical-donation-campaign/">
   <link rel="alternate" hreflang="en" href="https://jsebm.github.io/medical-donation-campaign/en/">
-  <link rel="alternate" hreflang="x-default" href="https://jsebm.github.io/medical-donation-campaign/">
+  <link rel="alternate" hreflang="x-default" href="https://jsebm.github.io/medical-donation-campaign/en/">
 
   <script>
     (function () {
-      var language = (navigator.language || navigator.userLanguage || "").toLowerCase();
       var path = window.location.pathname;
-      if (language.startsWith("en") && !path.includes("/en/")) {
+      if (!path.includes("/en/")) {
         window.location.replace("/medical-donation-campaign/en/");
       }
     })();
