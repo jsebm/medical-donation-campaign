@@ -239,6 +239,19 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.media {
+  overflow: hidden;
+}
+
+.media img {
+  display: block;
+  width: min(92%, 520px);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  margin-inline: auto;
+}
+
 .raised {
   margin-top: 0.4rem;
   margin-bottom: 0.6rem;
@@ -334,6 +347,24 @@ th {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.gallery-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(860px, 100%);
+  margin-inline: auto;
+}
+
+.gallery-two figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery-two img {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  object-fit: cover;
 }
 
 figcaption {
@@ -433,6 +464,10 @@ summary {
   .updates-grid,
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-two {
+    width: 100%;
   }
 
   .main-nav {

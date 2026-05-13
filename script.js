@@ -1,9 +1,9 @@
 const CAMPAIGN_CONFIG = {
-  goal: 5000,
+  goal: 2500,
   raised: 0,
   donationCount: 0,
   urgentDeadline: "2026-06-15T23:59:59",
-  paypalUrl: "https://www.paypal.com/donate/?hosted_button_id=REEMPLAZAR_ID"
+  paypalUrl: "https://www.paypal.com/donate/?business=morenoruizjangel%40gmail.com&currency_code=USD"
 };
 
 const STORAGE_KEY_MESSAGES = "solidarity_support_messages";
